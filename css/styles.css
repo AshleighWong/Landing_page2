@@ -688,8 +688,8 @@ progress {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   width: 100%;
-  padding-right: calc(var(--bs-gutter-x) * 0.5);
-  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  /* padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5); */
   margin-right: auto;
   margin-left: auto;
 }
@@ -12784,6 +12784,7 @@ html {
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
+  height: 100vh;
 }
 
 .masthead .masthead-heading {
@@ -12803,6 +12804,7 @@ html {
   object-position: 50% 15%;
 }
 
+
 @media (min-width: 992px) {
   .masthead {
     padding-top: calc(6rem + 104px);
@@ -12819,6 +12821,18 @@ html {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* Start with opacity 0 */
+  }
+
+  to {
+    opacity: 1;
+    /* End with opacity 1 */
+  }
+}
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -12828,13 +12842,17 @@ html {
   overflow: hidden;
 }
 
+.portfolio .portfolio-item:hover {
+  transform: scale(0.9);
+}
+
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
   top: 0;
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgb(196, 191, 171);
+  background-color: #1a252f;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
