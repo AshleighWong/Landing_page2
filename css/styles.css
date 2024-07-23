@@ -12619,6 +12619,7 @@ html {
 
 .page-section {
   padding: 6rem 0;
+  background-color: #1a252f;
 }
 
 .page-section .page-section-heading {
@@ -12645,7 +12646,7 @@ html {
   width: 100%;
   max-width: 7rem;
   height: 0.25rem;
-  background-color: #2c3e50;
+  background-color: white;
   border-radius: 1rem;
   border-color: #2c3e50;
 }
@@ -12767,8 +12768,9 @@ html {
   border-left: 0;
   border-right: 0;
   border-top: 0;
-  border-radius: 0;
-  border-width: 1px;
+  border-radius: 10px;
+  border-width: 5px;
+  padding: 5px;
 }
 
 .form-floating input.form-control:focus,
@@ -12838,7 +12840,7 @@ html {
   position: relative;
   display: block;
   max-width: 25rem;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -12856,7 +12858,7 @@ html {
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: .9;
+  opacity: .7;
 }
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
@@ -12886,6 +12888,7 @@ html {
   padding-bottom: 5rem;
   background-color: #2c3e50;
   color: #fff;
+  align-items: center;
 }
 
 .copyright {
