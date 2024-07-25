@@ -138,16 +138,16 @@
 }
 
 .bounce-text {
-  animation: bounce 1s ease;
+  animation: bounce 2s ease;
 }
 
 /* Apply animation to the text */
 .slide-in-text {
-  animation: slideIn 0.5s ease-out;
+  animation: slideIn 1.5s ease-out;
 }
 
 .slide-in-text1 {
-  animation: slideIn1 0.5s ease-out;
+  animation: slideIn1 1.5s ease-out;
 }
 
 .container1 {
