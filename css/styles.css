@@ -12783,10 +12783,66 @@ html {
   color: #6c757d;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
   height: 100vh;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+  background-color: #212f3c;
 }
 
 .masthead .masthead-heading {
@@ -12823,17 +12879,6 @@ html {
   }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    /* Start with opacity 0 */
-  }
-
-  to {
-    opacity: 1;
-    /* End with opacity 1 */
-  }
-}
 
 .portfolio .portfolio-item {
   cursor: pointer;
